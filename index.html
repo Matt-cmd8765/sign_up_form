@@ -4,37 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="stylesheet.css">
-  <title>Document</title>
+  <title>Fear the light</title>
 </head>
 <body>
-  <div id="info_box">
-    <h2>Let's do this!</h2>
-    <ul>
-      <li>
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="fname">
-      </li>
-      <li>
-        <label for="lname">Last Name</label>
-        <input type="text" name="lname" id="lname">
-      </li>
-      <li>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
-      </li>
-      <li>
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone">
-      </li>
-      <li>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-      </li>
-      <li>
-        <label for="conform_password">Confirm Password</label>
-        <input type="password" name="conform_password" id="conform_password">
-      </li>
-    </ul>
+  <div class="container">
+    <div class="left_side">
+      <div class="logo">
+        <img src="img/symbol.jpg" alt="NO.">
+        <h1>FEAR THE LIGHT</h1>
+      </div>
+      <div class="">
+        <p>Credit to <a href="https://unsplash.com/@mihaiteslariu0">Teslariu Mihai</a> for the photo</p>
+      </div>
+    </div>
+    <div class="right_side">
+      <div class="top_box">
+        <h4>Join or die</h4>
+        <h4>Fill out this form or don't. We will find you.</h4>
+      </div>
+      <form action="#" id="sign-up">
+        <fieldset class="info_field">
+          <div class="info_box">
+            <h2>Let's do this!</h2>
+            <ul>
+              <fieldset class="names">
+                <li>
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="fname" required>
+                </li>
+                <li>
+                  <label for="lname">Last Name</label>
+                  <input type="text" name="lname" id="lname" required>
+                </li>
+              </fieldset>
+              <fieldset class="mail_phone">
+                <li>
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required>
+                </li>
+                <li>
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" name="phone" id="phone" required>
+                </li>
+              </fieldset>
+              <fieldset class="field_passwords">
+                <li>
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" required>
+                </li>
+                <li>
+                  <label for="confirm_password">Confirm Password</label>
+                  <input type="password" name="confirm_password" id="confirm_password" required>
+                </li>
+              </fieldset>
+            </ul>
+          </div>
+        </fieldset>
+      </form>
+      <div class="bottom_box">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="index.html">Log In</a></p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
