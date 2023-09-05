@@ -74,6 +74,7 @@ fieldset {
   flex-grow: 1;
   border: none;
   display: flex;
+  flex-direction: row;
 }
 
 .bottom_box {
@@ -82,6 +83,12 @@ fieldset {
 
 li {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.right_input {
+  padding-left: 6em;
 }
 
 #password:invalid,
