@@ -1,5 +1,3 @@
-/*<img src="./img/teslariu-mihai-dVcRxd5bJTw-unsplash.jpg" alt="FEAR THE LIGHT">
-/* source for the background image.*/
 
 html, body {
   margin: 0;
@@ -62,7 +60,11 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  padding-left: 8rem;
+  padding-left: 4em;
+}
+
+#sign-up {
+  box-shadow: 5px 5px 5px grey;
 }
 
 .statement {
@@ -77,8 +79,25 @@ fieldset {
   flex-direction: row;
 }
 
+.info_box h2 {
+  padding-left: 2em;
+}
+
 .bottom_box {
-  flex-grow: 1;
+  flex-grow: 2;
+}
+
+button {
+  border-radius: 15px;
+  border: none;
+  background-color: lightgray;
+  font-size: large;
+  font-weight: bold;
+  padding: 15px 30px;;
+}
+
+button:hover {
+  box-shadow: 5px 5px 5px grey;
 }
 
 li {
@@ -87,17 +106,33 @@ li {
   flex-direction: column;
 }
 
+input {
+  border-radius: 5px;
+  border: solid grey 1px;
+  padding: 5px;
+}
+
 .right_input {
   padding-left: 6em;
 }
 
-#password:invalid,
-#confirm_password:invalid {
-  border-color: red; 
+#login {
+  padding: 30px;
 }
 
-#password:invalid,
-#confirm_password:invalid {
-  border-color: green; 
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: grey;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: blueviolet;
 }
 
