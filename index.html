@@ -30,31 +30,31 @@
             <ul>
               <fieldset class="names">
                 <li>
-                  <label for="fname">First Name</label>
+                  <label for="fname">* First Name</label>
                   <input type="text" id="fname" name="fname" required>
                 </li>
                 <li class="right_input">
-                  <label for="lname">Last Name</label>
+                  <label for="lname">* Last Name</label>
                   <input type="text" name="lname" id="lname" required>
                 </li>
               </fieldset>
               <fieldset class="mail_phone">
                 <li>
-                  <label for="email">Email</label>
+                  <label for="email">* Email</label>
                   <input type="email" name="email" id="email" required>
                 </li>
                 <li class="right_input">
-                  <label for="phone">Phone Number</label>
+                  <label for="phone">* Phone Number</label>
                   <input type="tel" name="phone" id="phone" required>
                 </li>
               </fieldset>
               <fieldset class="field_passwords">
                 <li>
-                  <label for="password">Password</label>
+                  <label for="password">* Password</label>
                   <input type="password" name="password" id="password" required>
                 </li>
                 <li class="right_input">
-                  <label for="confirm_password">Confirm Password</label>
+                  <label for="confirm_password">* Confirm Password</label>
                   <input type="password" name="confirm_password" id="confirm_password" required>
                 </li>
               </fieldset>
@@ -64,7 +64,7 @@
       </form>
       <div class="bottom_box">
         <form action="#" id="login">
-          <button type="submit">Create Account</button>
+          <button type="submit" id="create" onclick="Validate()">Create Account</button>
           <p>Already have an account? <a href="index.html">Log In</a></p>
         </form>
       </div>
